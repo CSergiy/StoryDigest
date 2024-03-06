@@ -33,7 +33,8 @@ The project methodology encompasses:
 - **Model Development**: Constructing a model to predict the effectiveness of summaries in conveying the story's essence.
 
 ## Results
-*The results section will detail the findings from the summarization experiments, including insights on the optimal summary lengths and styles that best facilitate comprehension and retention of narrative content.*
+*As the StoryDigest project is in its active stages of development and experimentation, this section is poised to evolve. Upon completion of the summarization experiments, it will be updated to showcase our findings, including insights into the optimal summary lengths and styles that best support narrative comprehension and retention. We are committed to sharing our discoveries and breakthroughs in enhancing the understanding of complex narratives through optimized summarization.*
+
 
 ## Contact
 For inquiries or collaboration proposals, please contact me at sergiy12422@gmail.com or connect on [LinkedIn](https://www.linkedin.com/in/sergiy-chepiga/).
