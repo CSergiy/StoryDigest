@@ -25,12 +25,12 @@ If you wish to go through the code, ensure you have Python installed on your mac
 pip install transformers requests numpy pandas scipy sklearn
 ```
 
-## Methodology
-The project methodology encompasses:
-- **Data Collection**: Gathering novels from public domain sources like Project Gutenberg.
-- **Summarization Techniques**: Applying different LLMs to summarize texts at various granularities.
-- **Evaluation Metrics**: Utilizing NLP evaluation metrics like ROUGE, METEOR, and custom coherence measures to assess summary quality.
-- **Model Development**: Constructing a model to predict the effectiveness of summaries in conveying the story's essence.
+- ## Methodology
+The project's methodology is multifaceted, involving:
+- **Data Collection**: Utilizing Project Gutenberg's repository of over 70,000 free ebooks, with a focus on selecting 'newer' books to avoid the confounding effect of translating Old English in the summarization process. Summary examples for training will initially be sourced from SparkNotes, providing both chapter-specific and entire novel summaries.
+- **Model Exploration**: Initial phases will test both encoder-decoder and decoder-only models to assess their efficacy in novel summarization. The exploration includes pretrained Mamba models, known for their selectivity in processing, to potentially enhance summary quality.
+- **Evaluation Metrics**: A dual approach incorporating n-gram based metrics (ROUGE, BLEU, METEOR, Sentence-BLEU) and embedding-based metrics (BERTscore, BLEURT) to comprehensively assess summary effectiveness.
+
 
 ## Results
 *As the StoryDigest project is in its active stages of development and experimentation, this section is poised to evolve. Upon completion of the summarization experiments, it will be updated to showcase our findings, including insights into the optimal summary lengths and styles that best support narrative comprehension and retention. We are committed to sharing our discoveries and breakthroughs in enhancing the understanding of complex narratives through optimized summarization.*
