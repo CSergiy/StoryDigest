@@ -22,7 +22,8 @@ To determine how to optimally summarize novels to ensure readers grasp the major
 If you wish to go through the code, ensure you have Python installed on your machine and the following packages for running the project scripts:
 
 ```
-pip install transformers requests numpy pandas scipy sklearn
+pip install transformers requests numpy pandas scipy sklearn requests beautifulsoup4
+
 ```
 
 - ## Methodology
