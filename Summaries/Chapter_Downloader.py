@@ -3,6 +3,17 @@ import requests
 from bs4 import BeautifulSoup
 import time
 
+def extract_with_spaces(tag):
+    texts = []
+    for child in tag.children:
+        if child.name == 'a':  # Hyperlinked text
+            texts.append(' ' + child.get_text(strip=True) + ' ')
+        elif isinstance(child, str):
+            texts.append(child)
+        else:  # For other tags within the paragraph, adjust as needed
+            texts.append(child.get_text(strip=True))
+    return ''.join(texts).replace('  ', ' ')  # Remove any double spaces created in the process
+
 def download_summary(base_url, sections, save_dir):
     os.makedirs(save_dir, exist_ok=True)
     
@@ -27,7 +38,7 @@ def download_summary(base_url, sections, save_dir):
                             break
                         capture = True
                     elif capture and elem.name == 'p':
-                        summary_texts.append(elem.get_text(strip=True))
+                        summary_texts.append(extract_with_spaces(elem))
                 
                 # Join the captured text paragraphs
                 summary_text = '\n'.join(summary_texts)
