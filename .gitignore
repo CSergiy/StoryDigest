@@ -5,3 +5,5 @@ Novels/
 Summaries/.ipynb_checkpoints/Chapter_Downloader-checkpoint.py
 .ipynb_checkpoints/EDA_Visuals-checkpoint.ipynb
 10k books/books_and_genres.csv
+Datasets/books_and_genres.csv
+Datasets/books.csv
